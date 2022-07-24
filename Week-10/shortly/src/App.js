@@ -12,7 +12,7 @@ function App() {
     <>
       <Navbar />
       <Body setLink={setLink} />
-      <Display link={link} />
+      <Display link={link} /> 
       <Footer />
     </>
   );
