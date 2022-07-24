@@ -1,0 +1,35 @@
+body{
+    margin:0px;
+    padding:0px;
+    font-family: 'Merriweather', serif;
+    margin:auto;
+    text-align: center;
+    color:#40514E
+}
+h1{
+    font-family: 'Sacramento', cursive;
+    font-size: 5.625rem;
+    margin: 50px auto 0 auto;
+    color:#66BFBF;
+    line-height: 2;
+}
+button{
+    background:linear-gradient(#11cdd4,#11999e);
+    border-radius: 8px;
+    border: 0px;
+    padding:5px 10px 5px 10px;
+    color:#EAF6F6;
+    font-size: 20px;
+    cursor: pointer;
+}
+button:hover{
+    background:linear-gradient(#30e3cb,#2bc4ad)
+}
+.desc{
+    font-size: 20px;
+    color:#2F8F9D;
+}
+h3{
+    color:#354259;
+    
+}

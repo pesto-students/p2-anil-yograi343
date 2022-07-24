@@ -1,0 +1,14 @@
+{
+  "name": "exercise5.4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "calculator.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Yogesh",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^28.1.1"
+  }
+}

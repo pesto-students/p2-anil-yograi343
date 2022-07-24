@@ -1,0 +1,14 @@
+{
+  "name": "problem6.1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "maxSum.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Yogesh",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^28.1.1"
+  }
+}

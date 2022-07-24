@@ -1,0 +1,143 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: lato;
+    box-sizing: border-box;
+}
+
+/* body reset */
+body {
+    min-height: 100vh;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* design navigabation bar */
+#navbar {
+    background-color: #f0f0f0;
+    position: fixed;
+    width: 2.1rem;
+    height: 100vh;
+    z-index: 2;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: auto;
+    position: absolute;
+    font-size: 1.2rem;
+}
+
+#navbar ul li {
+    margin-top: 35px;
+    margin-left: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#navbar ul li:hover {
+    background-color:#43689b ;
+}
+
+/* Design main content */
+.main{
+    z-index: 1;
+    width: 100%;
+    height:100%;
+}
+
+a.white {
+    color: white;
+}
+
+.main__content {
+    display: flex;
+    background-color: #454545;
+    color: white;
+}
+
+.main__content__logo {
+    margin: 20px 50px;
+}
+
+#main__content__head{
+    margin-right: 10px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#main__content__bottom{
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+table {
+    width:85%;
+}
+table tr td {
+    padding: 15px
+}
+
+.chartlist {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.chartlist tr:nth-child(2n) {
+    background: #f0f0f0;
+}
+
+.blue {
+    color: rgb(8, 52, 248);
+    font-weight: bold;
+}
+
+/* footer design */
+#footer {
+    background-color: #43689b;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+    z-index: 3;
+    width: 100vw;
+    vertical-align: baseline;
+    margin-top: auto;
+    
+}
+
+.footer__logo {
+    margin: 15px 10px;
+    justify-content: center;
+}
+
+footer div {
+    display: flex;
+}
+
+.footer__songname {
+    font-size: 1.1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.footer__artistname {
+    align-items: left;
+    font-size: 1.1rem;
+    justify-content: center;
+    margin-top: 1.2rem;
+}
+
+/* block for Player controls like forward, backward, pause/play, repeat and shuffle */
+.footer__controls{
+    justify-content: space-around;
+    width: 80%;
+    padding: 40px;
+}
+
