@@ -52,7 +52,7 @@ INSERT INTO ORDERS VALUES
 (323,'12/01/2022',2),
 (124,'24/11/2021',1),
 (221,'1/3/2021',8),
-(657,'23/7/2022',8),
+(657,'23/7/2022',6),
 (989,'17/1/2022',5),
 (786,'7/9/2021',4),
 (654,'5/8/2021',4),
@@ -78,14 +78,3 @@ INSERT INTO STORES VALUES
 (216,'The Saving Store',2004,'MUMBAI'),
 (217,'Corner Collections',2005,'HYDRABAD');
 
-
---Queries to fetch data from tables
-
-select ITEMNO,DESCRIPTION from items where weight =(select min(weight) from items)
-select wname from Warehouses where lower(location)="pune"
-select description from items where ono in (select ono from orders where cno=(select cno from customer where cname='PATIL'))
-select  wname,count(w.wid) as count from warehouses as w inner join stores as s on w.wid=s.wid group by w.wid having count=(select max(count) from (select count(w.wid)as count from warehouses as w inner join stores as s on w.wid=s.wid group by w.wid) )
-
-select DESCRIPTION ,count(description) from items group by description having count(DESCRIPTION)=(select min(count) from (select count(description) as count from items group by description))
-
-select cname ,o.ono,odate ,itemno,description from customer c inner join orders o on c.cno=o.cno inner join items i on o.ono=i.ono
